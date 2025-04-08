@@ -52,6 +52,13 @@ class Program
                     
                     if (!double.TryParse(Console.ReadLine(), out price))
                     {
+                        Console.WriteLine("Invalid price!!!");
+                        goto Price;
+                    }
+
+                    if (price < 0)
+                    {
+                        Console.WriteLine("Price cannot be negative!!!");
                         goto Price;
                     }
                     
@@ -99,8 +106,18 @@ class Program
                         goto UpdateAuthor;
                     }
                     
+                    UpdatePrice:
                     Console.WriteLine("Enter new book price: ");
-                    int updatedPrice = int.Parse(Console.ReadLine());
+                    if (!double.TryParse(Console.ReadLine(), out double updatedPrice))
+                    {
+                        Console.WriteLine("Invalid price!!!");
+                        goto UpdatePrice;
+                    }
+                    if (updatedPrice < 0)
+                    {
+                        Console.WriteLine("Price cannot be negative!!!");
+                        goto UpdatePrice;
+                    }
                     
                     lib.Update(updateId, new Book(updatedName, updatedAuthor, updatedPrice));
                     break;

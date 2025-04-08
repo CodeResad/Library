@@ -17,6 +17,7 @@ public class Library
     {
         Array.Resize(ref books, books.Length + 1);
         books[books.Length - 1] = book;
+        Console.WriteLine("Book added!");
     }
     
     public void RemoveBook(int id)
