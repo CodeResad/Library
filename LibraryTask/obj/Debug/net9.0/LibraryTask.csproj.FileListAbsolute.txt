@@ -12,3 +12,4 @@
 /Users/rashadjafarzade/RiderProjects/LibraryTask/LibraryTask/obj/Debug/net9.0/LibraryTask.pdb
 /Users/rashadjafarzade/RiderProjects/LibraryTask/LibraryTask/obj/Debug/net9.0/LibraryTask.genruntimeconfig.cache
 /Users/rashadjafarzade/RiderProjects/LibraryTask/LibraryTask/obj/Debug/net9.0/ref/LibraryTask.dll
+/Users/rashadjafarzade/RiderProjects/LibraryTask/LibraryTask/obj/Debug/net9.0/LibraryTask.sourcelink.json

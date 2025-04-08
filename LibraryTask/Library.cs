@@ -40,13 +40,6 @@ public class Library
             Array.Resize(ref books, books.Length - 1);
             Console.WriteLine($"Book ID {id} has been removed.");
             
-            Type type = typeof(Book);
-            var field = type.GetField("_id", BindingFlags.NonPublic | BindingFlags.Static);
-            int fieldValue = (int)field.GetValue(null);
-                
-            fieldValue--;
-                
-            field.SetValue(null, fieldValue);
         }
         else
         {
